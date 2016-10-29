@@ -1,0 +1,386 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font: 13px sans-serif;
+}
+body{
+    background: url("../img/bg1.jpg") center top fixed;
+    background-size: cover;
+    padding-top: 150px;
+    overflow-y: scroll;
+}
+header{
+    background:rgba(238,238,238,.9);
+    height: 140px;
+    padding: 0 40px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #ccc;
+    box-shadow: 0 5px 12px #ccc;
+    position: absolute;
+    top:0;
+    width: 100%;
+    z-index: 100;
+}
+header h1{
+    display: inline-block;
+}
+header img{
+    height:60px;
+    margin-top:40px;
+}
+nav{
+    float:right;
+}
+ul{
+    list-style: none;
+}
+li{
+    display: inline-block;
+    float: left;
+    position: relative;
+}
+
+nav ul li a{
+    line-height: 140px;
+    width:160px;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    transition: all ease-in-out .5s;
+    border-right: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    font-size: 1px;
+    color: #999;
+}
+#mnuCli{
+    background: url("../img/clientes.png") center center no-repeat;
+    background-size: 120px 120px;
+    color:white;
+}
+#mnuForn{
+    background: url("../img/fornecedores.png") center center no-repeat;
+    background-size: 120px 120px;
+    color:white;
+}
+li a:hover{
+    background: rgba(246,246,246,.7)!important;
+    transition: all ease-in-out .5s;
+    font-size: 15px;
+    color:black!important;
+}
+ul li ul{
+    display: none;
+}
+ul li:hover ul{
+    display: block;
+}
+ul li ul li{
+    display: block;
+    clear: both;
+    z-index: 100;
+    background: white;
+    border-bottom: 1px solid #ccc;
+}
+ul li ul li a{
+    line-height: 50px;
+    color: #ccc;
+    font-size: 15px;
+    background: white!important;
+}
+ul li ul li a:hover{
+    background:#eee!important;
+    color:black!important;
+}
+main{
+    padding: 20px 40px;
+    position: relative;
+}
+section ul{
+    margin-left: 10px;
+}
+.tabs{
+    float: left;
+    position: relative;
+    font-size: 14px;
+    font-weight: bold;
+    color: #ccc;
+    background-image: linear-gradient(to bottom, white 90%, #ddd);
+    border-radius: 5px 5px 0 0;
+    line-height: 30px;
+    width: 150px;
+    text-align: center;
+    box-shadow: 5px 0px 6px rgba(100,100,100,.3);
+    border:1px solid #ccc;
+}
+
+.atualizavel form{
+    border:1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+    text-align: center;
+    background: rgba(255,255,255,.5);
+}
+.atualizavel fieldset{
+    display: inline-block;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: right;
+    background: rgba(255,255,255,.5);
+    border:1px solid #ddd;
+    border-radius: 5px;
+    min-width: 70%;
+    box-shadow: 5px 5px 5px #ccc;
+}
+.atualizavel form legend{
+    font-size: 20px;
+    font-style: italic;
+    color: cornflowerblue;
+    border:1px solid #ddd;
+    padding: 7px;
+    background: rgba(255,255,255,.5);
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px #ccc;
+}
+.atualizavel form input{
+    display: inline-block;
+    padding: 7px;
+    margin: 6px 3px;
+    width: 80%;
+    font-size: 18px;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+.id-atualizavel{
+    border: none;
+    background: none;
+}
+.atualizavel form input[type=submit]{
+    background: #d5effb url("../img/atualize1.png") 20px center no-repeat;
+    background-size: 35px;
+    font-size: 20px;
+    font-weight: bold;
+    height: 50px;
+    width:200px;
+    border: 1px solid #42c0fb;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px #ddd;
+    cursor: pointer;
+    outline: none;
+    color:#42c0fb;
+    text-align: left;
+    text-indent: 60px;
+}
+.atualizavel form input[type=submit]:hover{
+    background: #c7ff94 url("../img/atualize2.png") 20px center no-repeat;
+    background-size: 35px;
+    border-color:#a3d179;
+    color: #89b066;
+}
+.atualizavel form label{
+    display: block;
+    font-size: 16px;
+    color: darkblue;
+}
+form .incluir{
+    background: #d5effb url("../img/ok1.png") 20px center no-repeat!important;
+    background-size: 35px!important;
+}
+form .incluir:hover{
+    background: #c7ff94 url("../img/ok2.png") 20px center no-repeat!important;
+    background-size: 35px!important;
+    border-color:#a3d179!important;
+    color: #89b066;
+}
+/*
+form input[type=submit]:hover{
+    background-color: #9bddfb!important;
+    transition: all ease-in-out .5s;
+}
+*/
+table{
+    width: 100%;
+    position: relative;
+    top:-2px;
+    background: rgba(255,255,255,.5); 
+    border: 1px solid #ddd;
+    border-radius: 5px 5px 0 0;
+}
+table caption{
+    margin: 20px 0 5px;
+}
+table caption span{
+    margin: 20px 0 5px;
+    font-size: 20px;
+    color: cornflowerblue;
+    background: rgba(255,255,255,.5); 
+    border: 1px solid #ddd;
+    border-radius: 5px 5px 0 0;
+    border-bottom: none;
+    padding: 15px 30px 5px;
+    box-sizing: border-box;
+}
+thead th{
+    font-weight: bold;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+    padding: 10px;
+}
+thead th:last-child{
+    width: 120px;
+    padding: 10px 0px;
+    text-align: center;
+}
+thead th:first-child{
+    width: 5px;
+    text-align: center;
+}
+tr:nth-child(even) {
+    background-color: #e7e7e7;
+}
+td:not(:first-child){ 
+    font-weight: bold;
+    text-align: left;
+    color: darkblue;
+    padding: 10px;
+}
+td:first-child{
+    text-align: center;
+}
+td form{
+    text-align: center;
+}
+.delete, .edite, .atualiza{
+    border:none;
+    height: 18px;
+    width: 18px;
+    cursor: pointer;
+    margin: 0 9px;
+    outline: none;
+    font-size: 1px;
+    color:#42c0fb;
+}
+tfoot th{
+    padding: 10px;
+    border-top:1px solid #ddd;
+}
+tfoot th span{
+    font-size: 20px;
+    color: cornflowerblue;
+    border-left:2px solid cornflowerblue;
+    border-right:2px solid cornflowerblue;
+    border-radius: 20px;
+    padding: 0 10px;
+}
+.delete{
+    background: url("../img/delete1.png") center center no-repeat;
+    background-size: cover;
+}
+.edite{
+    background: url("../img/edite1.png") center center no-repeat;
+    background-size: cover;
+}
+.atualiza{
+    background: url("../img/atualize1.png") center center no-repeat;
+    background-size: cover;
+}
+.delete:hover{
+    background: url("../img/delete2.png") center center no-repeat;
+    background-size: cover;
+}
+.edite:hover{
+    background: url("../img/edite2.png") center center no-repeat;
+    background-size: cover;
+}
+.atualiza:hover{
+    background: url("../img/atualize2.png") center center no-repeat;
+    background-size: cover;
+}
+
+div{
+    position: relative;
+}
+section {
+
+}
+
+main>[id^="div"]{
+    z-index: 10;
+    display: none;
+}
+main>span{
+    display: none;
+}
+#alvoListarClientes:target ~ [id^="div"],
+#alvoListarFornecedores:target ~ [id^="div"]{
+    display: none;
+    z-index: 10;
+}
+
+#alvoIncluirClientes:target ~ #divIncluirCli,
+#alvoIncluirFornecedores:target ~ #divIncluirForn,
+#alvoListarFornecedores:target ~ #divFornecedores,
+#alvoListarClientes:target ~ #divClientes{
+    display: block;
+    z-index: 20;
+}
+
+footer{
+    padding:10px;
+    text-align: center;
+    clear:both;
+    margin: 100px 0;
+}
+footer ul li{
+    border:16px solid rgba(255,255,255,.6);
+    border-radius:50%;
+    display: inline-block;
+    float: none;
+    margin: 0 10px;
+}
+
+footer ul li a{
+    display: block;
+    line-height: 130px;
+    width: 130px;
+    text-decoration: none;
+    font-size: 1px;
+    opacity: 0;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+footer ul li a:hover{
+    font-size:1px;
+}
+#denny{ 
+    background: url("../img/denny.jpg") center center no-repeat;
+    background-size:172px;
+}
+#parisotto{
+    background: url("../img/parisotto.jpg") center center no-repeat;
+    background-size:172px;
+}
+#fabricio{
+    background: url("../img/fabricio.jpg") center center no-repeat;
+    background-size:172px;
+}
+#sandro{
+    background: url("../img/sandro.jpg") center center no-repeat;
+    background-size:172px;
+}
+#wagner{
+    background: url("../img/wagner.jpg") center center no-repeat;
+    background-size:172px;
+}
+#nomes li{
+    border:none;
+    width:162px;
+    border-radius: 0;
+    font-size: 18px;
+    color: darkblue;
+    font-style: italic;
+    padding-top:10px;
+}
