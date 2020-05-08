@@ -9,3 +9,4 @@ O exercício consiste nos seguintes termos:
 5. A aplicação deverá permitir listagem, inclusão, alteração e remoção de registros.
 
 O trabalho foi apresenta na aula de 26 de outrubro de 2016 com êxito.
+Testes
